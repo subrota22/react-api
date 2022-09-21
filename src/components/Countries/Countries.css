@@ -1,0 +1,46 @@
+
+.gridCountry{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 15px;
+    margin: 20px;
+}
+
+.countyInfo{
+width: 350px;
+background-color: blueviolet;
+padding: 20px;
+border-radius: 15px;
+height: auto; 
+margin-top: 10px;
+margin-bottom: 10px;
+}
+/*----------- animation ----------*/
+#anchorAnimation{
+    animation: map infinite linear forwards alternate 1s; 
+    margin-bottom: 20px;
+}
+@keyframes map {
+    0%{
+        color: rgb(70, 231, 21);
+    }
+    100%{
+        color: blue;
+    }
+}
+/*-------- responsive --------*/
+@media (max-width:1000px) {
+    .gridCountry{
+     display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 15px;
+}    
+    }
+
+@media (max-width:700px) {
+    .gridCountry{
+     display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+    gap: 15px;
+}    
+    }

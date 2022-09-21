@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Edu+SA+Beginner&family=Finlandica:ital,wght@1,600&family=Gentium+Book+Plus:ital,wght@0,700;1,700&family=Lato:wght@700&family=Open+Sans:ital,wght@0,300;1,400&family=PT+Serif:ital@1&family=Poppins:wght@300;500&family=Raleway:wght@200&family=Roboto&family=Roboto+Slab:wght@300;400&display=swap');
 .App {
   text-align: center;
 }
@@ -36,3 +37,36 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background-color: black;
+  color: white;
+  margin: 0%;
+  font-family: 'Roboto Slab', serif;
+}
+body::-webkit-scrollbar{
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb{
+  background-color: #61dafb;
+  border-radius: 12px;
+}
+.myInfo{
+  height: auto;
+  width: 350px;
+  background-color: rgba(0, 0, 139, 0.7);
+  color: white; 
+  border-radius: 12px;
+  margin: 15px;
+  padding: 12px;
+  box-shadow: 0 0 5px 8px lime;
+  font-size: 17px;
+}
+
+.makeGrid{
+background-color: rgba(0, 255, 255, 0.5);
+padding: 20px;
+display:grid;
+grid-template-columns: repeat(3 , 1fr);
+}
+
